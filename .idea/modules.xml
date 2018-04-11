@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eduport-jarchecker.iml" filepath="$PROJECT_DIR$/.idea/modules/eduport-jarchecker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eduport-jarchecker_main.iml" filepath="$PROJECT_DIR$/.idea/modules/eduport-jarchecker_main.iml" group="eduport-jarchecker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eduport-jarchecker_test.iml" filepath="$PROJECT_DIR$/.idea/modules/eduport-jarchecker_test.iml" group="eduport-jarchecker" />
+    </modules>
+  </component>
+</project>
