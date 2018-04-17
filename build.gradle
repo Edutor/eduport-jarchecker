@@ -1,6 +1,6 @@
 buildscript {
     ext.kotlin_version = '1.2.31'
-    ext.eduport_version = '0.9'
+    ext.eduport_version = '0.9.1'
 
     repositories {
         mavenCentral()
@@ -11,7 +11,7 @@ buildscript {
 }
 
 group 'dk.edutor'
-version '0.9'
+version '0.9.1'
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
@@ -20,8 +20,9 @@ apply plugin: 'maven-publish'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenCentral()
     mavenLocal()
+    maven { url myMavenRepoReadUrl }
+    mavenCentral()
     }
 
 dependencies {
@@ -38,6 +39,10 @@ compileTestKotlin {
     }
 
 publishing {
+    repositories {
+        mavenLocal()
+        maven { url myMavenRepoWriteUrl }
+        }
     publications {
         maven(MavenPublication) {
             from components.java
